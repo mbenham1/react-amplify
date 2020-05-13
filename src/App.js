@@ -81,7 +81,7 @@ class App extends Component {
           </p>
         </div>
         <p>
-          Visit <a href="http://www.michaelbenham.com">www.michaelbenham.com</a> to check!
+          Visit <a target="_blank" href="http://www.michaelbenham.com">www.michaelbenham.com</a> to check!
         </p>
       </div>
       )
