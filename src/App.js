@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 
@@ -11,7 +11,8 @@ class App extends Component {
     original2: "",
     flip: "",
     flip2: "",
-    copyButton: false
+    copyButton: false,
+    copyMessage: ""
   }
 
   handleInputChange = event => {
@@ -22,19 +23,26 @@ class App extends Component {
     // console.log(reverse);
 
     this.setState({
-        [name]: value,
-        flip: reverse
+      [name]: value,
+      flip: reverse
     });
+
   };
 
   generatePalindrome = () => {
-    let reverse = this.state.original.split("").slice(0, -1).reverse().join().replace(/,/g, '');
-    // console.log(reverse);
-    this.setState({
-      original2: this.state.original,
-      flip2: reverse,
-      copyButton: true
-    })
+
+    if (!this.state.original) {
+      return
+    } else {
+      let reverse = this.state.original.split("").slice(0, -1).reverse().join().replace(/,/g, '');
+      // console.log(reverse);
+      this.setState({
+        original2: this.state.original,
+        flip2: reverse,
+        copyButton: true
+      })
+    }
+
   }
 
   copyPalindrome = () => {
@@ -44,17 +52,33 @@ class App extends Component {
     var dummy = document.createElement("input");
     document.body.appendChild(dummy);
     dummy.setAttribute("id", "dummy_id");
-    document.getElementById("dummy_id").value=palindrome;
+    document.getElementById("dummy_id").value = palindrome;
     dummy.select();
     document.execCommand("copy");
     document.body.removeChild(dummy);
 
+    this.setState({
+      copyMessage: "Copied to Clipboard",
+      copyButton: false
+    })
+
+    setTimeout(
+      function () {
+        this.setState({
+          copyMessage: "",
+          copyButton: false
+        });
+      }
+        .bind(this),
+      3000
+    );
+
   }
 
-    render() {
+  render() {
 
-      return (
-      <div className="container" style={{margin: '0 auto', boxShadow: '10px 10px', fontFamily: 'Roboto', width: '80%', textAlign: 'center', border: '2px solid', borderRadius: '8px', marginTop: '50px'}}>
+    return (
+      <div className="container" style={{ margin: '0 auto', boxShadow: '10px 10px', fontFamily: 'Roboto', width: '80%', textAlign: 'center', border: '2px solid', borderRadius: '8px', marginTop: '50px' }}>
         <h3>Palindrome Generator</h3>
         <input
           className="form-control"
@@ -77,15 +101,16 @@ class App extends Component {
         <div>
           <p>
             Palindrome: <span>{this.state.original2}{this.state.flip2}  </span>
-            <button id="copy-palindrome" onClick={this.copyPalindrome} style={{'display': this.state.copyButton ? 'inline' : 'none'}}>Copy</button>
+            <button id="copy-palindrome" onClick={this.copyPalindrome} style={{ 'display': this.state.copyButton ? 'inline' : 'none' }}>Copy</button>
+            <span style={{ 'font-size': '12px', 'display': this.state.copyMessage ? 'inline-block' : 'none'}}> &#9989; {this.state.copyMessage}</span>
           </p>
         </div>
         <p>
-          Visit <a target="_blank" href="http://www.michaelbenham.com">www.michaelbenham.com</a> to check!
+          Visit <a target="_blank" href="http://www.michaelbenham.com/portfolio">www.michaelbenham.com</a> to check!
         </p>
       </div>
-      )
-    }   
+    )
+  }
 }
 
 // function App() {
