@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/react-amplify/static/css/main.d1b05096.chunk.css",
-    "main.js": "/react-amplify/static/js/main.0789a015.chunk.js",
-    "main.js.map": "/react-amplify/static/js/main.0789a015.chunk.js.map",
+    "main.js": "/react-amplify/static/js/main.3f921e54.chunk.js",
+    "main.js.map": "/react-amplify/static/js/main.3f921e54.chunk.js.map",
     "runtime-main.js": "/react-amplify/static/js/runtime-main.42c10ac3.js",
     "runtime-main.js.map": "/react-amplify/static/js/runtime-main.42c10ac3.js.map",
     "static/css/2.65b39531.chunk.css": "/react-amplify/static/css/2.65b39531.chunk.css",
     "static/js/2.852b23dd.chunk.js": "/react-amplify/static/js/2.852b23dd.chunk.js",
     "static/js/2.852b23dd.chunk.js.map": "/react-amplify/static/js/2.852b23dd.chunk.js.map",
     "index.html": "/react-amplify/index.html",
-    "precache-manifest.0280cdfbbd0b5f008d17bc2b15c89462.js": "/react-amplify/precache-manifest.0280cdfbbd0b5f008d17bc2b15c89462.js",
+    "precache-manifest.2346911c0afb2bc8865bbc4a691367a3.js": "/react-amplify/precache-manifest.2346911c0afb2bc8865bbc4a691367a3.js",
     "service-worker.js": "/react-amplify/service-worker.js",
     "static/css/2.65b39531.chunk.css.map": "/react-amplify/static/css/2.65b39531.chunk.css.map",
     "static/css/main.d1b05096.chunk.css.map": "/react-amplify/static/css/main.d1b05096.chunk.css.map",
@@ -21,6 +21,6 @@
     "static/css/2.65b39531.chunk.css",
     "static/js/2.852b23dd.chunk.js",
     "static/css/main.d1b05096.chunk.css",
-    "static/js/main.0789a015.chunk.js"
+    "static/js/main.3f921e54.chunk.js"
   ]
 }

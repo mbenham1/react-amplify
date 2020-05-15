@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "d7e67ddc553a62b918af174924cd8efb",
+    "revision": "b74cb5509ca1923560e68030620e94fd",
     "url": "/react-amplify/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/react-amplify/static/css/2.65b39531.chunk.css"
   },
   {
-    "revision": "2364941f01b55fe57760",
+    "revision": "5553bc9033df1b3e3a21",
     "url": "/react-amplify/static/css/main.d1b05096.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/react-amplify/static/js/2.852b23dd.chunk.js.LICENSE"
   },
   {
-    "revision": "2364941f01b55fe57760",
-    "url": "/react-amplify/static/js/main.0789a015.chunk.js"
+    "revision": "5553bc9033df1b3e3a21",
+    "url": "/react-amplify/static/js/main.3f921e54.chunk.js"
   },
   {
     "revision": "1984ea26794337f57000",
