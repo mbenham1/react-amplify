@@ -102,7 +102,7 @@ class App extends Component {
           <p>
             Palindrome: <span>{this.state.original2}{this.state.flip2}  </span>
             <button id="copy-palindrome" onClick={this.copyPalindrome} style={{ 'display': this.state.copyButton ? 'inline' : 'none' }}>Copy</button>
-            <span style={{ 'font-size': '12px', 'display': this.state.copyMessage ? 'inline-block' : 'none'}}> &#9989; {this.state.copyMessage}</span>
+            <span style={{ 'font-family': 'Lucida Console','font-size': '12px', 'display': this.state.copyMessage ? 'inline-block' : 'none'}}> &#9989; {this.state.copyMessage}</span>
           </p>
         </div>
         <p>
